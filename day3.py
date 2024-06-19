@@ -1,5 +1,5 @@
 #geeks for geeks
-
+# Palindromic Array
 def PalinArray(arr ,n):
     def reverse_integer(n):
     # Handle negative numbers
@@ -18,3 +18,16 @@ def PalinArray(arr ,n):
         else:
             return 0
     return 1
+
+#question 2
+# Value equal to index value
+class Solution:
+    def valueEqualToIndex(self,arr, n):
+	    if n==0:
+	        return 0
+	    elif n>0:
+	        lis = []
+	        for i in range(0,n):
+	            if arr[i]==i+1:
+	                lis.append(arr[i])
+	    return lis
